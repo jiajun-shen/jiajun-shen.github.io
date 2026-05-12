@@ -1,4 +1,4 @@
-# jiajun.github.io
+# jiajun-shen.github.io
 
 这是沈家骏个人网站的静态版本，可以直接发布到 GitHub Pages。
 
@@ -25,11 +25,21 @@
 1. 打开 GitHub Desktop。
 2. 选择 `File` -> `Add local repository`，选中这个文件夹：`C:\Users\shenj\Documents\Codex\2026-05-12\files-mentioned-by-the-user-docx\jiajun.github.io`。
 3. 如果 GitHub Desktop 提示这里还不是仓库，就选择创建仓库。
-4. 仓库名要和你的 GitHub 用户名匹配：如果你的 GitHub 用户名是 `jiajun`，仓库名用 `jiajun.github.io`。如果用户名不是 `jiajun`，用户主页仓库应命名为 `你的用户名.github.io`。
+4. 仓库名要和你的 GitHub 用户名匹配：你现在的 GitHub 用户名是 `jiajun-shen`，所以用户主页仓库应命名为 `jiajun-shen.github.io`。
 5. Commit 后点击 `Publish repository`。
-6. 发布后通常可以通过 `https://你的用户名.github.io/` 访问。
+6. 发布后通常可以通过 `https://jiajun-shen.github.io/` 访问。
 
 GitHub 官方说明：用户或组织主页仓库必须命名为 `<user>.github.io` 或 `<organization>.github.io`。参考：[Creating a GitHub Pages site](https://docs.github.com/pages/getting-started-with-github-pages/creating-a-github-pages-site)。
+
+## 如果打开后是 404
+
+先检查这三件事：
+
+1. 仓库名是否是 `jiajun-shen.github.io`。如果现在还是 `jiajun.github.io`，它不会发布到 `https://jiajun-shen.github.io/` 这个根网址。
+2. 仓库是否是 Public。GitHub Free 账号通常需要公开仓库才能使用公开的 GitHub Pages。
+3. `Settings` -> `Pages` 里是否选择了 `Deploy from a branch`，分支选择 `main`，目录选择 `/ (root)`。
+
+如果你暂时不想改仓库名，也可以把 `jiajun.github.io` 当成项目站点发布，但访问地址会变成 `https://jiajun-shen.github.io/jiajun.github.io/`，不是 `https://jiajun-shen.github.io/`。
 
 ## 隐私提醒
 
