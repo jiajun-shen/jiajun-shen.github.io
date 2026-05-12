@@ -6,9 +6,11 @@
 
 - `index.html`：首页，放个人定位、精选项目和最近想做的方向。
 - `projects.html`：项目/作品页，放机器人、仿真、硬件和创作项目。
-- `writing.html`：文章/思考列表。
-- `posts/robotics-systems.html`：第一篇文章示例，以后可以复制这个文件写新文章。
+- `writing.html`：文章/思考列表，会自动读取 GitHub Issues。
+- `article.html`：单篇文章详情页，会按 issue 编号自动读取正文。
+- `.github/ISSUE_TEMPLATE/blog-post.md`：GitHub 里点击 New issue 时看到的“写一篇文章”模板。
 - `about.html`：关于我，放教育、实习、技能和兴趣。
+- `assets/main.js`：导航高亮，以及 GitHub Issues 文章同步逻辑。
 - `assets/styles.css`：所有页面的样式。
 - `assets/profile.jpeg`：头像图片，来自简历附件。
 
@@ -17,8 +19,20 @@
 1. 改文字：打开对应的 `.html` 文件，找到中文注释附近的内容直接改。
 2. 改颜色/间距/字体：打开 `assets/styles.css`。
 3. 加项目：在 `projects.html` 里复制一个 `<article class="project-card">...</article>`，修改标题、时间、说明和标签。
-4. 加文章：复制 `posts/robotics-systems.html`，改文件名、标题和正文，再到 `writing.html` 加一张文章卡片链接过去。
+4. 加文章：不用改网页文件。到 GitHub 仓库的 `Issues`，点击 `New issue`，选择“写一篇文章”模板，写标题和正文后发布。网站会自动把 open issue 显示成文章卡片。
 5. 换头像：把新头像放到 `assets/`，然后把页面里的 `assets/profile.jpeg` 改成新图片文件名。
+
+## 怎么写文章
+
+现在文章系统由 GitHub Issues 自动驱动：
+
+1. 打开 `https://github.com/jiajun-shen/jiajun-shen.github.io/issues/new/choose`。
+2. 选择“写一篇文章”模板。
+3. Issue 标题就是网站里的文章标题。
+4. Issue 正文的第一段会变成文章卡片预览。
+5. 点击 `Submit new issue` 后，等待几十秒，`https://jiajun-shen.github.io/writing.html` 会自动多出一篇文章。
+6. 如果想修改文章，编辑对应 issue。
+7. 如果想从网站下架文章，关闭对应 issue，或者给它加 `draft` / `hidden` 标签。
 
 ## 用 GitHub Desktop 发布
 

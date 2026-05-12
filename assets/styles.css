@@ -413,6 +413,11 @@ button:focus-visible {
   padding: 24px;
 }
 
+.article-card:hover {
+  transform: translateY(-2px);
+  transition: transform 160ms ease;
+}
+
 .article-card.featured {
   grid-column: span 2;
   background: var(--ink);
@@ -434,6 +439,39 @@ button:focus-visible {
   color: var(--teal);
   font-size: 0.82rem;
   font-weight: 800;
+}
+
+.article-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.article-toolbar h2 {
+  margin: 0;
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  line-height: 1.2;
+}
+
+.article-toolbar p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.loading-card,
+.empty-card {
+  border-style: dashed;
+  box-shadow: none;
+}
+
+.issue-labels {
+  margin-top: 18px;
 }
 
 .about-layout {
@@ -517,6 +555,72 @@ button:focus-visible {
   font-size: clamp(1.1rem, 2vw, 1.35rem);
 }
 
+.prose h2,
+.issue-body h2 {
+  margin-top: 34px;
+  margin-bottom: 8px;
+  font-size: clamp(1.35rem, 2.3vw, 1.85rem);
+  line-height: 1.24;
+  letter-spacing: 0;
+}
+
+.issue-body h3 {
+  margin-top: 26px;
+  margin-bottom: 6px;
+  font-size: 1.2rem;
+}
+
+.issue-body ul,
+.issue-body ol {
+  padding-left: 1.3rem;
+}
+
+.issue-body li + li {
+  margin-top: 6px;
+}
+
+.issue-body blockquote {
+  margin: 24px 0;
+  padding: 4px 0 4px 18px;
+  border-left: 4px solid var(--teal);
+  color: var(--muted);
+}
+
+.issue-body pre {
+  overflow-x: auto;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #111a18;
+  color: #edf6f2;
+}
+
+.issue-body code {
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: var(--surface-soft);
+  font-size: 0.95em;
+}
+
+.issue-body pre code {
+  padding: 0;
+  background: transparent;
+}
+
+.issue-body img {
+  margin: 24px 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.issue-body a {
+  color: var(--cobalt);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
 .site-footer {
   display: flex;
   align-items: center;
@@ -567,6 +671,11 @@ button:focus-visible {
 
   .article-card.featured {
     grid-column: auto;
+  }
+
+  .article-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .about-card {

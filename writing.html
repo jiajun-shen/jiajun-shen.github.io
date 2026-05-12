@@ -32,34 +32,21 @@
         </p>
       </header>
 
-      <section class="article-grid" aria-label="文章列表">
-        <a class="article-card featured" href="posts/robotics-systems.html">
-          <span class="article-date">2026.05.12</span>
-          <h2>从机械到机器人：我想解决的三类问题</h2>
-          <p>一篇给个人网站开头的短文，整理我为什么关注机器人系统、传感器融合和具身智能。</p>
-          <span class="text-link">阅读全文</span>
-        </a>
+      <section class="article-toolbar" aria-label="写作入口">
+        <div>
+          <p class="eyebrow">How to publish</p>
+          <h2>用 GitHub Issue 写新文章</h2>
+          <p>以后点击 GitHub 的 New issue，写标题和正文，发布后这里会自动出现新的文章卡片。</p>
+        </div>
+        <a class="button primary" href="https://github.com/jiajun-shen/jiajun-shen.github.io/issues/new/choose" target="_blank" rel="noreferrer">写一篇文章</a>
+      </section>
 
-        <a class="article-card" href="posts/control-simulation.html">
-          <span class="article-date">草稿 · 待写</span>
-          <h2>控制仿真：从模型到动作</h2>
-          <p>记录 Simulink/Simscape 的建模过程、参数调试、失败案例和最后的动画展示。</p>
-          <span class="text-link">打开草稿</span>
-        </a>
-
-        <a class="article-card" href="posts/paris-notes.html">
-          <span class="article-date">草稿 · 待写</span>
-          <h2>巴黎学习手记</h2>
-          <p>记录工程课堂、跨文化沟通、法语学习，以及从上海到巴黎的学习方式变化。</p>
-          <span class="text-link">打开草稿</span>
-        </a>
-
-        <a class="article-card" href="posts/project-review.html">
-          <span class="article-date">草稿 · 待写</span>
-          <h2>一个项目的复盘模板</h2>
-          <p>从目标、方案、工具、遇到的问题、结果和下一步六个角度复盘一个项目。</p>
-          <span class="text-link">打开草稿</span>
-        </a>
+      <section class="article-grid" aria-label="文章列表" data-issue-list>
+        <article class="article-card loading-card">
+          <span class="article-date">Loading</span>
+          <h2>正在读取文章...</h2>
+          <p>文章会从 GitHub Issues 自动同步到这里。</p>
+        </article>
       </section>
     </main>
 
